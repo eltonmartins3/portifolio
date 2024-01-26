@@ -1,7 +1,7 @@
 
 /*estilo geral*/
 *{
-    margin: 0;
+    margin: 7px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,7 +12,7 @@ body{
 }
 
 .interface{
-    max-width: 1280px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@ body{
 
 .btn-contato button{
     padding: 10px 40px;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     background-color: yellow;
     border: 0;
@@ -55,7 +55,8 @@ header >.interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    font-size: 18px;
+
 }
 header a{
     color: rgb(59, 59, 59);
@@ -97,7 +98,7 @@ section.topo-do-site.flex{
     color: rgb(255, 255, 255);
     font-size: 42px;
     line-height: 40px;
-
+    
 }
 .topo-do-site .txt-topo-site h1 span{
     color: yellow  
@@ -105,6 +106,7 @@ section.topo-do-site.flex{
 .topo-do-site .txt-topo-site p{
     color: rgb(255, 255, 255);
     margin: 40px ;
+    text-align: justify;
 
 }
 .topo-do-site .img-topo-site img{
@@ -174,7 +176,7 @@ section.sobre .flex{
     margin: 20px 0;
     text-align: justify;
 }
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -187,7 +189,7 @@ section.sobre .flex{
 }
 /*ESTILO DO FORMULARIO DE CONTATO*/
 section.formulario{
-    padding: 80px 4%;
+    padding: 60px 4%;
 }
 form{
     max-width: 500px;
@@ -196,7 +198,7 @@ form{
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    margin-top: 4opx;
+    margin-top: 40px;
 
 }
 
@@ -226,4 +228,86 @@ form .btn-enviar input{
     font-weight: 700;
     cursor: pointer;
 }
+/* ESTILO DO RODAPE*/
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .line-footer{
+    padding: 20px 0;
+}
+.borda{
+    border-top:2px solid yellow;
+}
 
+footer .line-footer p i{
+    color: yellow;
+    font-size: 22px;  
+
+}
+footer .line-footer p a{
+    color: #ffffff;
+
+}
+
+@media screen and (max-width:1020px){
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column-reverse;
+    }
+    h2.título{
+        font-size: 34px;
+        line-height:30px;
+    }
+    /* CABEÇALHO */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    /* TOPO DO SITE */
+    section.topo-do-site.flex{
+        gap:40px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8% ;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+    /* ESPECIALIDADES*/
+    section.especialidades{
+        padding: 40px 8%;
+    }
+    /* SOBRE */
+    section.sobre{
+        padding: 80px 8%;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    .btn-social{
+        text-align: center;
+    }
+    .img-sobre img{
+        width: 100%;
+    }
+    /* RODAPE */
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+}
